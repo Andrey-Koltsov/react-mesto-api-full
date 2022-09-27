@@ -4,5 +4,5 @@
 github https://github.com/Andrey-Koltsov/react-mesto-api-full
 
 IP 158.160.9.139  
-Frontend https://koltsov.nomorepartiesxyz.ru/
+Frontend https://koltsov.nomorepartiesxyz.ru/  
 Backend https://api.koltsov.nomorepartiesxyz.ru/
