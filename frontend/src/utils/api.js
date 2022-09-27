@@ -88,7 +88,7 @@ class Api {
 // });
 
 const api = new Api({
-    baseUrl: 'http://localhost:3001',
+    baseUrl: 'https://api.koltsov.nomorepartiesxyz.ru',
     headers: {
         'Content-Type': 'application/json'
     }

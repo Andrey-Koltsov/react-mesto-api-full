@@ -14,7 +14,7 @@ const { requestLogger, errorLogger } = require('./middlewares/logger');
 const { login, createUser, signout } = require('./controllers/users');
 const { URL_REGEXP } = require('./utils/constants');
 
-const { PORT = 3001 } = process.env;
+const { PORT = 3000 } = process.env;
 const app = express();
 
 mongoose.connect('mongodb://localhost:27017/mestodb', {
@@ -23,7 +23,7 @@ mongoose.connect('mongodb://localhost:27017/mestodb', {
 });
 
 app.use(cors({
-  origin: 'http://localhost:3000',
+  origin: 'https://koltsov.nomorepartiesxyz.ru',
   credentials: true,
 }));
 app.use(express.json());

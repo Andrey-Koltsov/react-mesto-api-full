@@ -33,18 +33,6 @@ class Auth {
             .then(this._checkResponse);
     }
 
-    getContent() {
-        return fetch(`${this._url}/users/me`, {
-            credentials: 'include',
-            method: "GET",
-            headers: {
-                'Accept': 'application/json',
-                "Content-Type": "application/json",
-            },
-        })
-            .then(this._checkResponse);
-    }
-
     signout() {
         return fetch(`${this._url}/signout`, {
             credentials: 'include',
@@ -56,5 +44,5 @@ class Auth {
     }
 }
 
-const auth = new Auth('http://localhost:3001');
+const auth = new Auth('https://api.koltsov.nomorepartiesxyz.ru');
 export default auth;
